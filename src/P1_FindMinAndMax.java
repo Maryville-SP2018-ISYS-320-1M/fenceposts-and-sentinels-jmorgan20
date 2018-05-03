@@ -15,6 +15,24 @@ public class P1_FindMinAndMax {
         int min = Integer.MAX_VALUE;
         
         // YOUR CODE STARTS HERE
+        int x = 0;
+        while(x != -1) {
+        	
+        	System.out.print("Type a number (or -1 to stop):");
+        	int input = console.nextInt();
+        	
+        	if(input != -1) {
+        		if(input < min && min != Integer.MIN_VALUE) {
+        			min = input;
+        		} else if (min == Integer.MIN_VALUE) {
+        			max = input;
+        		}
+        		
+        		else x = -1;
+        	}
+        	
+        		
+        }
 
 
         // YOUR CODE ENDS HERE
